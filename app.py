@@ -1,29 +1,26 @@
 import streamlit as st
-import time # Importe o time se quiser dar um "respiro" extra
 
-# 1. Configuração da página (Sempre a primeira!)
 st.set_page_config(page_title="Vestibular para Todos", page_icon="🎓", layout="centered")
 
-# 2. A "Mágica" do Carregamento
-# Tudo o que estiver dentro desse 'with' mostrará a mensagem na tela
-with st.spinner('⏳ Preparando seus materiais para o Nota 1000...'):
-    
-    # Aqui você chama a função de cache que criamos
-    @st.cache_data
-    def carregar_conteudo_pesado():
-        # (Seu dicionário gigante de provas e citações entra aqui)
-        # ...
-        return {"provas": {...}}
+@st.cache_data
+def carregar_conteudo_pesado():
+    dados = {
+        "provas": {
+            2025: {
+                "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_GB_impresso_D1_CD1.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_GB_impresso_D2_CD7.pdf"}
+            },
+            # ... COLE TODOS OS OUTROS ANOS AQUI DENTRO ...
+            2010: {
+                "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia1_caderno1_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia1_caderno1_azul_com_gab.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia2_caderno7_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia2_caderno7_azul_com_gab.pdf"}
+            }
+        }
+    }
+    return dados
 
-    dados = carregar_conteudo_pesado()
-    
-    # Opcional: Um mini delay só para a mensagem não "piscar" rápido demais
-    # time.sleep(0.5) 
-
-# Após o 'with', a mensagem some e o site aparece!
-st.success('✅ Tudo pronto! Bons estudos.')
-
-
+conteudo = carregar_conteudo_pesado()
+provas_db = conteudo["provas"] 
 
 st.markdown("""
 <style>
