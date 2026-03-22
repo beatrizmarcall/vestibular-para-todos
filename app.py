@@ -1,11 +1,23 @@
 import streamlit as st
-# Forçar o tema claro via configuração (tente colocar isso antes de tudo)
+
+# Coloque isso ANTES de começar a desenhar o site
+@st.cache_data
+def carregar_conteudo_pesado():
+    # Aqui vai o seu dicionário de provas, as 30 citações, etc.
+    dados = {
+        "provas": { ... },
+        "citacoes": { ... }
+    }
+    return dados
+
+conteudo = carregar_conteudo_pesado()
+
+
 st.markdown('<script>parent.window.document.body.className = "light";</script>', unsafe_allow_html=True)
 
 # Configuração da página
 st.set_page_config(page_title="Vestibular para Todos", page_icon="🎓", layout="centered")
 
-# --- ESTILO CSS À PROVA DE ERROS ---
 st.markdown("""
 <style>
     /* 1. Forçar o fundo do app para branco */
@@ -63,8 +75,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Banco de Dados de Links (Resumido para o exemplo, mantenha os seus links aqui)
-# Banco de Dados de Links Completo (2010 - 2025)
+
 provas_db = {
     2025: {
         "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_GB_impresso_D1_CD1.pdf"},
