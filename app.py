@@ -1,19 +1,44 @@
 import streamlit as st
 
-# Coloque isso ANTES de começar a desenhar o site
+# 1. SEMPRE A PRIMEIRA LINHA: Configuração da página
+st.set_page_config(page_title="Vestibular para Todos", page_icon="🎓", layout="centered")
+
+# 2. FUNÇÃO DE CACHE: Reúne TUDO o que é fixo e pesado
 @st.cache_data
 def carregar_conteudo_pesado():
-    # Aqui vai o seu dicionário de provas, as 30 citações, etc.
     dados = {
-        "provas": { ... },
-        "citacoes": { ... }
+        "provas": {
+            2025: {
+                "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_GB_impresso_D1_CD1.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_GB_impresso_D2_CD7.pdf"}
+            },
+            # ... COLE TODOS OS OUTROS ANOS AQUI DENTRO ...
+            2010: {
+                "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia1_caderno1_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia1_caderno1_azul_com_gab.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia2_caderno7_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia2_caderno7_azul_com_gab.pdf"}
+            }
+        }
     }
     return dados
 
+# Chama a função uma única vez
 conteudo = carregar_conteudo_pesado()
+provas_db = conteudo["provas"] # Cria o atalho para não quebrar o resto do seu código
 
-
-st.markdown('<script>parent.window.document.body.className = "light";</script>', unsafe_allow_html=True)
+# 3. CSS UNIFICADO (Sem scripts de terceiros)
+st.markdown("""
+<style>
+    .stApp { background-color: white !important; }
+    h1, h2, h3, h4, p, li, div, span { color: black !important; }
+    
+    /* Estilos dos Menus e Botões */
+    div[data-baseweb="select"] > div { background-color: white !important; color: black !important; }
+    .stButton>button { background-color: #d8c6f7; color: #4a357d; border-radius: 8px; font-weight: 600; }
+    .stLinkButton>a { background-color: #e6f0ff !important; color: #004a99 !important; border-radius: 8px !important; font-weight: 600 !important; }
+    
+    [data-testid="stExpander"] { background-color: #f9f9f9 !important; border: 1px solid #e6e6e6 !important; }
+</style>
+""", unsafe_allow_html=True)
 
 # Configuração da página
 st.set_page_config(page_title="Vestibular para Todos", page_icon="🎓", layout="centered")
