@@ -10,7 +10,62 @@ def carregar_conteudo_pesado():
                 "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_GB_impresso_D1_CD1.pdf"},
                 "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_GB_impresso_D2_CD7.pdf"}
             },
-            # ... COLE TODOS OS OUTROS ANOS AQUI DENTRO ...
+            2024: {
+                "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"}
+            },
+            2023: {
+                "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D2_CD7.pdf"}
+            },
+            2022: {
+                "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_GB_impresso_D1_CD1.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_GB_impresso_D2_CD7.pdf"}
+            },
+            2021: {
+                "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2021_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2021_GB_impresso_D1_CD1.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2021_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2021_GB_impresso_D2_CD7.pdf"}
+            },
+            2020: {
+                "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_GB_impresso_D1_CD1.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_digital_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_GB_digital_D2_CD7.pdf"}
+            },
+            2019: {
+                "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2019/gabarito_1_dia_caderno_1_azul_aplicacao_regular.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2019/gabarito_2_dia_caderno_7_azul_aplicacao_regular.pdf"}
+            },
+            2018: {
+                "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2018/GAB_ENEM_2018_DIA_1_AZUL.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2018/GAB_ENEM_2018_DIA_2_AZUL.pdf"}
+            },
+            2017: {
+                "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2017/2017_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2017/cad_1_gabarito_azul_5112017.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2017/2017_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2017/cad_7_gabarito_azul_12112017.pdf"}
+            },
+            2016: {
+                "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2016/GAB_ENEM_2016_DIA_1_01_AZUL.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2016/GAB_ENEM_2016_DIA_2_07_AZUL.pdf"}
+            },
+            2015: {
+                "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2015/CADERNO_1_AZUL_SABADO.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2015/CADERNO_7_AZUL_DOMINGO.pdf"}
+            },
+            2014: {
+                "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2014/2014_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2014/CADERNO_1_AZUL_SABADO.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2014/2014_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2014/CADERNO_7_AZUL_DOMINGO.pdf"}
+            },
+            2013: {
+                "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno1_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2013/dia1_azul.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia2_caderno7_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2013/dia2_azul.pdf"}
+            },
+            2012: {
+                "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno1_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2012/dia1_azul.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia2_caderno7_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2012/dia2_azul.pdf"}
+            },
+            2011: {
+                "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2011/dia1_caderno1_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2011/01_AZUL_GABARITO.pdf"},
+                "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2011/dia2_caderno7_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2011/07_AZUL_GABARITO.pdf"}
+            },
             2010: {
                 "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia1_caderno1_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia1_caderno1_azul_com_gab.pdf"},
                 "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia2_caderno7_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia2_caderno7_azul_com_gab.pdf"}
@@ -18,6 +73,8 @@ def carregar_conteudo_pesado():
         }
     }
     return dados
+
+# Executa o carregamento e cria a variável que o seu código já usa
 
 conteudo = carregar_conteudo_pesado()
 provas_db = conteudo["provas"] 
@@ -97,72 +154,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-provas_db = {
-    2025: {
-        "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_GB_impresso_D1_CD1.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_GB_impresso_D2_CD7.pdf"}
-    },
-    2024: {
-        "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D1_CD1.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2024_GB_impresso_D2_CD7.pdf"}
-    },
-    2023: {
-        "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D1_CD1.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2023_GB_impresso_D2_CD7.pdf"}
-    },
-    2022: {
-        "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_GB_impresso_D1_CD1.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2022_GB_impresso_D2_CD7.pdf"}
-    },
-    2021: {
-        "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2021_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2021_GB_impresso_D1_CD1.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2021_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2021_GB_impresso_D2_CD7.pdf"}
-    },
-    2020: {
-        "dia1": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_GB_impresso_D1_CD1.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_PV_digital_D2_CD7.pdf", "gab": "https://download.inep.gov.br/enem/provas_e_gabaritos/2020_GB_digital_D2_CD7.pdf"}
-    },
-    2019: {
-        "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2019/gabarito_1_dia_caderno_1_azul_aplicacao_regular.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2019/2019_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2019/gabarito_2_dia_caderno_7_azul_aplicacao_regular.pdf"}
-    },
-    2018: {
-        "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2018/GAB_ENEM_2018_DIA_1_AZUL.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2018/2018_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2018/GAB_ENEM_2018_DIA_2_AZUL.pdf"}
-    },
-    2017: {
-        "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2017/2017_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2017/cad_1_gabarito_azul_5112017.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2017/2017_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2017/cad_7_gabarito_azul_12112017.pdf"}
-    },
-    2016: {
-        "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2016/GAB_ENEM_2016_DIA_1_01_AZUL.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2016/2016_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2016/GAB_ENEM_2016_DIA_2_07_AZUL.pdf"}
-    },
-    2015: {
-        "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2015/CADERNO_1_AZUL_SABADO.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2015/2015_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2015/CADERNO_7_AZUL_DOMINGO.pdf"}
-    },
-    2014: {
-        "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2014/2014_PV_impresso_D1_CD1.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2014/CADERNO_1_AZUL_SABADO.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2014/2014_PV_impresso_D2_CD7.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2014/CADERNO_7_AZUL_DOMINGO.pdf"}
-    },
-    2013: {
-        "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia1_caderno1_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2013/dia1_azul.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2013/dia2_caderno7_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2013/dia2_azul.pdf"}
-    },
-    2012: {
-        "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia1_caderno1_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2012/dia1_azul.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2012/dia2_caderno7_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2012/dia2_azul.pdf"}
-    },
-    2011: {
-        "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2011/dia1_caderno1_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2011/01_AZUL_GABARITO.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2011/dia2_caderno7_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/gabaritos/2011/07_AZUL_GABARITO.pdf"}
-    },
-    2010: {
-        "dia1": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia1_caderno1_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia1_caderno1_azul_com_gab.pdf"},
-        "dia2": {"prova": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia2_caderno7_azul.pdf", "gab": "https://download.inep.gov.br/educacao_basica/enem/provas/2010/dia2_caderno7_azul_com_gab.pdf"}
-    }
-}
+conteudo = carregar_conteudo_pesado()
+provas_db = conteudo["provas"]
 
 # Cabeçalho
 st.markdown('<h1 style="text-align: center;">🎓 Vestibular para Todos</h1>', unsafe_allow_html=True)
